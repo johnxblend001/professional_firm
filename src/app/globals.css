@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-dark: #063633;
+  --color-accent-lime: #c8f8a9;
+  --color-surface-bg: #f2f5f1;
+  --color-text-main: #181818;
+  --color-text-muted: #6c6c6c;
+  --color-border-subtle: #e5e7eb;
+  --color-star-gold: #ffdb00;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    color: #6c6c6c;
+    background-color: #ffffff;
+    font-family: var(--font-onest), system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #181818;
+    font-family: var(--font-onest), system-ui, -apple-system, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background-color: #c8f8a9;
+    color: #063633;
+  }
+}
+
+@layer components {
+  /* Pill Button with Right Lime/Dark Arrow Square */
+  .fincia-btn-pill-dark {
+    @apply inline-flex items-center justify-between pl-6 pr-1.5 py-1.5 rounded-full bg-[#063633] text-white text-sm font-semibold transition-all duration-300 hover:bg-[#0a4642] hover:shadow-md;
+  }
+
+  .fincia-btn-pill-lime {
+    @apply inline-flex items-center justify-between pl-6 pr-1.5 py-1.5 rounded-full bg-[#c8f8a9] text-[#063633] text-sm font-semibold transition-all duration-300 hover:bg-[#b5f392] hover:shadow-md;
+  }
+
+  .fincia-btn-pill-outline {
+    @apply inline-flex items-center justify-between pl-6 pr-1.5 py-1.5 rounded-full border border-[#063633] text-[#063633] text-sm font-semibold transition-all duration-300 hover:bg-[#063633] hover:text-white;
+  }
+
+  .fincia-btn-pill-white-outline {
+    @apply inline-flex items-center justify-between pl-6 pr-1.5 py-1.5 rounded-full border border-white/60 text-white text-sm font-semibold transition-all duration-300 hover:bg-white hover:text-[#063633];
+  }
+
+  .arrow-square-lime {
+    @apply ml-4 w-7 h-7 rounded-lg bg-[#c8f8a9] text-[#063633] flex items-center justify-center font-bold text-xs transition-transform duration-300 group-hover:translate-x-0.5;
+  }
+
+  .arrow-square-dark {
+    @apply ml-4 w-7 h-7 rounded-lg bg-[#063633] text-[#c8f8a9] flex items-center justify-center font-bold text-xs transition-transform duration-300 group-hover:translate-x-0.5;
+  }
+
+  .arrow-square-soft {
+    @apply ml-4 w-7 h-7 rounded-lg bg-[#f2f5f1] text-[#181818] flex items-center justify-center font-bold text-xs transition-all duration-300 group-hover:bg-[#063633] group-hover:text-[#c8f8a9] group-hover:translate-x-0.5;
+  }
+
+  /* Eyebrow Sparkle Badges */
+  .badge-eyebrow {
+    @apply inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide border;
+  }
+
+  .badge-eyebrow-light {
+    @apply badge-eyebrow bg-[#f2f5f1] text-[#181818] border-transparent;
+  }
+
+  .badge-eyebrow-white {
+    @apply badge-eyebrow bg-white text-[#181818] border-[#e5e7eb] shadow-sm;
+  }
+
+  .badge-eyebrow-glass {
+    @apply badge-eyebrow bg-white/10 text-white border-white/20 backdrop-blur-md;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+

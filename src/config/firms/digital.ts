@@ -1,0 +1,296 @@
+import { FirmConfig } from "@/types/firm";
+
+export const digitalConfig: FirmConfig = {
+  name: "LedgerPulse Cloud Accountants",
+  shortName: "LedgerPulse",
+  brandMonogram: "LP",
+  slug: "digital",
+  archetype: "digital",
+  taglineBadge: "LHDN MyInvois API Ready · Platinum Cloud Partner",
+  registration: {
+    body: "Malaysian Institute of Accountants (MIA)",
+    memberNo: "MIA Member Firm No. 9841",
+    establishedYear: 2019,
+    establishedDate: "15 January 2019",
+    legalForm: "Digital Chartered Accountants & Tax Tech Advisory",
+  },
+  logo: "/firms/ledgerpulse-logo.svg",
+  contact: {
+    phone: "+60 3-8686 2100",
+    phoneSecondary: "+60 17-550 8299",
+    email: "hello@ledgerpulse.my",
+    whatsapp: "+60 17-550 8299",
+  },
+  locations: {
+    headquarters: {
+      label: "Bangsar South Technology Centre",
+      suite: "Unit 12-03, Level 12, The Horizon, Phase 2",
+      street: "No. 8, Jalan Kerinchi, Bangsar South",
+      postcode: "59200",
+      city: "Kuala Lumpur",
+      state: "Wilayah Persekutuan",
+      country: "Malaysia",
+    },
+    branch: {
+      label: "Penang Digital Practice Hub",
+      suite: "Level 6, Gurney Tower, Gurney Drive",
+      city: "Georgetown",
+      state: "Pulau Pinang",
+      country: "Malaysia",
+    },
+  },
+  colors: {
+    dark: "#0F172A",        // Deep Slate
+    accent: "#2563EB",      // Electric Royal Blue
+    accentHover: "#1D4ED8", // Deep Royal
+    surface: "#F8FAFC",     // Light Crisp Slate
+    cardBg: "#FFFFFF",
+    muted: "#64748B",       // Cool Slate Muted
+    border: "#E2E8F0",      // Slate Hairline Border
+  },
+  hero: {
+    tagline: "Automated Bookkeeping · LHDN e-Invoicing API · Real-Time Financials",
+    headline: "The Modern Cloud Ledger Engineered for Scaling Malaysian Companies",
+    subtext:
+      "Eliminate paper receipts, manual data entry, and compliance anxiety. We combine certified Malaysian Chartered Accountants with modern cloud software—seamlessly automating your LHDN MyInvois compliance, bank reconciliations, and monthly board packs.",
+    primaryCta: {
+      label: "Run 2-Min Compliance Scorecard",
+      href: "#scorecard",
+    },
+    secondaryCta: {
+      label: "Book 15-Min System Demo",
+      href: "#digital-booking",
+    },
+    bgImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80",
+  },
+  credibilityMetrics: [
+    { value: "< 24 Hrs", label: "Ledger Close Time", detail: "Real-time bank synchronization" },
+    { value: "100%", label: "LHDN Validation Rate", detail: "Zero-rejection MyInvois API bridge" },
+    { value: "480+", label: "Tech-Enabled Clients", detail: "SaaS, e-commerce, and modern SMEs" },
+    { value: "4.9 / 5.0", label: "Client NPS Score", detail: "Rated #1 digital practice in KL" },
+  ],
+  founder: {
+    name: "Kenneth Wong, C.A.(M)",
+    title: "Managing Director & Head of Cloud Systems",
+    credentials: "C.A.(M), CPA Australia, Xero Certified Advisor",
+    pedigreeBadge: "Ex-PwC Digital Assurance Senior Manager & Tech Architect",
+    summary:
+      "Trained at PwC Digital Assurance advising enterprise ERP rollouts and automated financial workflows. Founded LedgerPulse to empower Malaysian enterprises with high-speed automated bookkeeping, paperless SSM secretarial, and instant LHDN e-Invoicing synchronization.",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+  },
+  techStack: [
+    {
+      name: "Xero Cloud Accounting",
+      category: "Core General Ledger",
+      tier: "Certified Platinum Partner",
+      status: "Live Sync",
+      description: "Direct bank feeds with Maybank, CIMB, Public Bank, and RHB with automated reconciliation rules.",
+    },
+    {
+      name: "LHDN MyInvois Gateway",
+      category: "e-Invoicing Infrastructure",
+      tier: "Official API Integration",
+      status: "100% Tax Compliant",
+      description: "Automated XML/JSON invoice payload generation, UUID cryptographic stamping, and QR code embedding.",
+    },
+    {
+      name: "AutoCount Cloud & QNE",
+      category: "Local Regulatory ERP",
+      tier: "Enterprise Implementation Partner",
+      status: "Direct Connector",
+      description: "Seamless synchronization for Malaysian manufacturing and high-volume wholesale trading businesses.",
+    },
+    {
+      name: "Dext Prepare & Hubdoc",
+      category: "AI Receipt Extraction",
+      tier: "OCR Engine",
+      status: "Instant Capture",
+      description: "Snap or forward invoices via WhatsApp or email. 99.4% OCR precision with line-item extraction.",
+    },
+    {
+      name: "Employment Hero & Kakitangan",
+      category: "Payroll & Statutory HR",
+      tier: "Integrated Payroll",
+      status: "Automated PCB",
+      description: "One-click statutory EPF, SOCSO, EIS, and LHDN CP39/CP39A lodgement with online payslips.",
+    },
+  ],
+  complianceTiers: [
+    {
+      id: "statutory-essentials",
+      name: "Statutory Essentials",
+      tagline: "Essential SSM & LHDN Baseline",
+      priceMonthly: "RM 580",
+      priceAnnual: "RM 6,260",
+      turnoverRange: "Revenue up to RM 1,000,000 / year",
+      highlighted: false,
+      badge: "Standard Compliance",
+      deliverables: [
+        "Annual Corporate Tax Return (Form C & CP204 tax estimate)",
+        "Year-end audit schedule preparation & auditor coordination",
+        "Named Company Secretary & Registered Office Address",
+        "Annual SSM lodgement & AGM statutory documentation",
+        "Standard email support (24-hour turnaround SLA)",
+      ],
+      sla: "24-Hour Email SLA",
+      idealFor: "Holding companies, early-stage startups, and asset vehicles requiring pristine statutory standing.",
+    },
+    {
+      id: "cloud-growth",
+      name: "Cloud Growth & e-Invois",
+      tagline: "Full-Cycle Automated Cloud Bookkeeping",
+      priceMonthly: "RM 1,480",
+      priceAnnual: "RM 15,980",
+      turnoverRange: "Revenue RM 1M – RM 10,000,000 / year",
+      highlighted: true,
+      badge: "Most Popular for Scaling SMEs",
+      deliverables: [
+        "Complete monthly bookkeeping in Xero or AutoCount Cloud",
+        "LHDN MyInvois API Gateway integration & invoice verification",
+        "Monthly Profit & Loss, Balance Sheet & Aged Receivables review",
+        "Full statutory payroll administration for up to 15 staff (EPF, SOCSO, PCB)",
+        "Bi-monthly SST (Sales & Service Tax) preparation and filing",
+        "Dedicated Chartered Accountant with 4-hour WhatsApp SLA",
+      ],
+      sla: "4-Hour Direct WhatsApp SLA",
+      idealFor: "Fast-moving operating companies seeking zero bookkeeping backlog and automated LHDN e-Invoicing.",
+    },
+    {
+      id: "virtual-cfo",
+      name: "Virtual CFO & Strategic Advisory",
+      tagline: "Executive Financial Leadership on Demand",
+      priceMonthly: "RM 3,800",
+      priceAnnual: "RM 41,000",
+      turnoverRange: "Revenue RM 10,000,000+ / year",
+      highlighted: false,
+      badge: "Executive Enterprise Tier",
+      deliverables: [
+        "Everything in Cloud Growth tier with unlimited transactional volume",
+        "Weekly rolling 13-week cashflow forecasting & working capital modeling",
+        "Live PowerBI / Fathom executive dashboard customized for directors",
+        "Monthly formal Board Meeting attendance & executive management pack",
+        "Proactive tax planning, transfer pricing & group restructuring advisory",
+        "1-Hour Priority SLA & direct Mobile Hotline to Senior Partner",
+      ],
+      sla: "1-Hour Priority Escalation",
+      idealFor: "Ambitious enterprises preparing for bank financing, Series A/B fundraising, or IPO audit readiness.",
+    },
+  ],
+  checklistItems: [
+    {
+      id: "einvois-readiness",
+      label: "LHDN MyInvois Compliance & API Readiness",
+      deadline: "Mandatory Phase 1 / Phase 2 Deadline",
+      points: 25,
+      category: "e-Invoicing",
+      description: "Does your billing system validate Buyer TIN, BRN/NRIC, and transmit validated XML/JSON payloads with instant QR codes?",
+    },
+    {
+      id: "bank-sync",
+      label: "Automated Daily Bank Feeds (Maybank / CIMB / RHB)",
+      deadline: "Operational Efficiency Baseline",
+      points: 20,
+      category: "Statutory SSM",
+      description: "Are your bank transactions synchronized automatically into your general ledger, eliminating manual statement uploads?",
+    },
+    {
+      id: "digital-payroll",
+      label: "Digital Payroll with Auto-Calculated PCB, EPF & SOCSO",
+      deadline: "15th of Every Month (Statutory Penalty Risk)",
+      points: 20,
+      category: "Payroll",
+      description: "Is your monthly statutory contribution computed error-free and submitted via direct bank bulk files or API portal?",
+    },
+    {
+      id: "paperless-sec",
+      label: "SSM Digital Corporate Secretarial & Director e-Signatures",
+      deadline: "Companies Act 2016 Mandate",
+      points: 15,
+      category: "Statutory SSM",
+      description: "Can company directors execute board resolutions and AGM minutes from anywhere via DocuSign or verified digital ID?",
+    },
+    {
+      id: "realtime-kpi",
+      label: "Monthly Real-Time Directorial Financial Reporting",
+      deadline: "Close by Day 7 of Next Month",
+      points: 20,
+      category: "Tax LHDN",
+      description: "Do you receive an audited-grade P&L and Balance Sheet within 7 calendar days of month-end to make data-driven decisions?",
+    },
+  ],
+  services: [
+    {
+      id: "cloud-accounting-automation",
+      title: "Automated Cloud Accounting & Bookkeeping",
+      tagline: "Live Ledger Precision with Zero Backlog",
+      description:
+        "Modern cloud accounting tailored for Malaysian businesses. We connect your bank accounts directly to Xero or AutoCount, automating supplier bill extraction and daily reconciliations.",
+      keyDeliverables: [
+        "Automated AI receipt & supplier bill capture via Dext/Hubdoc",
+        "Daily bank synchronization across all major Malaysian banks",
+        "Clean month-end reconciliation and accruals by certified accountants",
+        "Instant drill-down visibility into customer balances and margins",
+      ],
+      icon: "BarChart3",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+    },
+    {
+      id: "lhdn-einvoicing-integration",
+      title: "LHDN MyInvois Mandate API & Advisory",
+      tagline: "Seamless e-Invoicing Without Disrupting Operations",
+      description:
+        "End-to-end technical implementation and compliance advisory for the Inland Revenue Board of Malaysia (LHDN) e-Invoicing rollout across all mandatory transaction types.",
+      keyDeliverables: [
+        "API bridge connectivity between your POS/CRM and LHDN MyInvois",
+        "Buyer Tax Identification Number (TIN) & BRN database validation",
+        "Consolidated e-invoice preparation for B2C and non-resident receipts",
+        "Penalty audit defense against Section 120 tax non-compliance fines",
+      ],
+      icon: "ShieldCheck",
+      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80",
+    },
+    {
+      id: "digital-secretarial-payroll",
+      title: "Paperless Corporate Secretarial & Payroll",
+      tagline: "100% Digital SSM Governance & Employee Experience",
+      description:
+        "Say goodbye to courier dispatch delays and manual signing. Manage your Sdn Bhd incorporation, annual returns, and payroll from a single secure portal.",
+      keyDeliverables: [
+        "Cloud-based statutory register management with digital signing",
+        "SSM annual return lodgements & board resolution drafting",
+        "Automated monthly payroll with EPF, SOCSO, EIS & PCB direct debit",
+        "Employee mobile app for instant payslips, EA forms & leave tracking",
+      ],
+      icon: "Building2",
+      image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80",
+    },
+    {
+      id: "virtual-cfo-intelligence",
+      title: "Virtual CFO & Management Intelligence",
+      tagline: "Strategic Financial Insights for Board Decisions",
+      description:
+        "On-demand financial leadership for companies that have outgrown basic bookkeeping but aren't ready for a full-time RM300,000/year Chief Financial Officer.",
+      keyDeliverables: [
+        "Weekly rolling 13-week cashflow liquidity stress testing",
+        "Unit economics, customer lifetime value & churn metric tracking",
+        "Investor pitch deck financial model audits and cap table management",
+        "Quarterly strategic tax planning to optimize corporate incentives",
+      ],
+      icon: "TrendingUp",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+    },
+  ],
+  industryFocus: [
+    "SaaS & High-Growth Digital Startups",
+    "Omnichannel E-Commerce & Retail Brands",
+    "Digital Creative Agencies & IT Consultancies",
+    "Specialty F&B Multi-Outlet Operators",
+    "B2B Professional Services & Architecture Firms",
+    "Import/Export & Regional Trading Houses",
+  ],
+  footer: {
+    legalNotice:
+      "LedgerPulse Cloud Accountants is a licensed practice of Chartered Accountants registered with the Malaysian Institute of Accountants (MIA Member Firm No. 9841). Certified Xero Platinum Partner and authorized LHDN MyInvois technical advisory team.",
+    copyright: "© 2019 – 2026 LedgerPulse Cloud Accountants. All Rights Reserved.",
+  },
+};
