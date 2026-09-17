@@ -16,22 +16,22 @@ export const firmsRegistry: Record<string, FirmConfig> = {
   [sylvesterAnthonyConfig.slug]: sylvesterAnthonyConfig,
 
   // Convenience aliases for clean URLs
-  "sylvester": institutionalConfig,
-  "sac": institutionalConfig,
+  "sylvester": sylvesterAnthonyConfig,
+  "sac": sylvesterAnthonyConfig,
   "pulse": digitalConfig,
   "ledgerpulse": digitalConfig,
   "apex": advisoryConfig,
 };
 
 export const defaultFirmSlug =
-  process.env.NEXT_PUBLIC_FIRM_ID || advisoryConfig.slug;
+  process.env.NEXT_PUBLIC_FIRM_ID || sylvesterAnthonyConfig.slug;
 
 export function getFirmConfig(slug?: string): FirmConfig {
   if (!slug) {
-    return firmsRegistry[defaultFirmSlug] || advisoryConfig;
+    return firmsRegistry[defaultFirmSlug] || sylvesterAnthonyConfig;
   }
   const normalized = slug.toLowerCase().trim();
-  return firmsRegistry[normalized] || firmsRegistry[defaultFirmSlug] || advisoryConfig;
+  return firmsRegistry[normalized] || firmsRegistry[defaultFirmSlug] || sylvesterAnthonyConfig;
 }
 
 export function getAllFirmSlugs(): string[] {
