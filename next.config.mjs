@@ -4,6 +4,7 @@ const isGithubActions = process.env.GITHUB_ACTIONS === "true";
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
+  trailingSlash: true,
   basePath: isGithubActions ? "/professional_firm" : "",
   images: {
     unoptimized: true,
