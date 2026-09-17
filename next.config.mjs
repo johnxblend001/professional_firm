@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
+const isGithubActions = process.env.GITHUB_ACTIONS === "true";
+
 const nextConfig = {
   reactStrictMode: true,
+  output: "export",
+  basePath: isGithubActions ? "/professional_firm" : "",
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -20,3 +25,4 @@ const nextConfig = {
 };
 
 export default nextConfig;
+
